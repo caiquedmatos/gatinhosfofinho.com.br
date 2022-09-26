@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@400;500;700;900&display=swap');
 
 * {
   text-decoration: none;
@@ -6,7 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
 body {
@@ -126,19 +126,37 @@ header .logo img {
 }
 
 .item-menu a {
-  padding: 15px;
-  margin: 10px;
   color: #333;
   background: #fbfbfb;
   font-size: 1rem;
   font-weight: 500;
   transition: 0.3s;
   border-radius: 20px;
+  padding: 10px 3px;
+  margin-right: 30px;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+  display: inline-block;
+
+  font-size: clamp(1rem, 1.3rem, 2rem);
+  font-weight: 500;
+  position: relative;
 }
 
-.item-menu a:hover {
-  background: #000;
-  color: #fff;
+.item-menu a::before {
+  content: '';
+  position: absolute;
+  background-image: url(/imagens/epgadas.png);
+  background-size: 30.2px;
+  background-repeat-y: no-repeat;
+  width: 0%;
+  height: 30px;
+  bottom: -55%;
+  transition: 0.6s all ease;
+}
+
+.item-menu a:hover::before {
+  width: 100%;
 }
 
 #btn-mobile {
@@ -159,7 +177,7 @@ header .logo img {
   position: relative;
 }
 
-.box-bg-home-new{
+.box-bg-home-new {
   background: url(/imagens/banner-home/banner-1.jpg) #393538 top no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -200,7 +218,7 @@ header .logo img {
 }
 
 .box-content-sobre-nos h1::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 5px;
@@ -223,17 +241,16 @@ header .logo img {
   padding: 30px;
   border-radius: 30px;
   margin: 30px 0;
-  
 }
 
-.box-shadow-right{
+.box-shadow-right {
   -webkit-box-shadow: 1.5px 3.5px 0 3.5px #000000;
-    -moz-box-shadow: 1.5px 3.5px 0 3.5px #000000;
-    box-shadow: 1.5px 3.5px 0 3.5px #000000;
-  }
+  -moz-box-shadow: 1.5px 3.5px 0 3.5px #000000;
+  box-shadow: 1.5px 3.5px 0 3.5px #000000;
+}
 
-.box-shadow-left{
--webkit-box-shadow: 1.5px 3.5px 0 3.5px #000000;
+.box-shadow-left {
+  -webkit-box-shadow: 1.5px 3.5px 0 3.5px #000000;
   -moz-box-shadow: 1.5px 3.5px 0 3.5px #000000;
   box-shadow: -1.5px 3.5px 0 3.5px #000000;
 }
@@ -269,7 +286,7 @@ header .logo img {
 }
 
 .box-infos-right strong::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 3px;
@@ -309,7 +326,7 @@ header .logo img {
 }
 
 .box-infos-left strong::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 3px;
@@ -351,7 +368,7 @@ footer .logo img {
 }
 
 .box-footer-itens h5::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 5px;
@@ -399,7 +416,7 @@ footer .logo img {
 }
 
 .box-social-itens h5::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100px;
   height: 5px;
@@ -593,32 +610,31 @@ footer .logo img {
   opacity: 0;
   transition: 0.6s;
 }
-[data-anime="left"] {
+[data-anime='left'] {
   transform: translate3d(20px, 0, 0);
 }
-[data-anime="right"] {
+[data-anime='right'] {
   transform: translate3d(20px, 0, 0);
 }
-[data-anime].animate{
+[data-anime].animate {
   opacity: 1;
-  transform: translate3d(0px,0px,0px);
+  transform: translate3d(0px, 0px, 0px);
 }
 
 @media (max-width: 55em) {
-
   [data-anime] {
     opacity: 0;
     transition: 0.6s;
   }
-  [data-anime="left"] {
+  [data-anime='left'] {
     transform: translate3d(0, -50px, 0);
   }
-  [data-anime="right"] {
+  [data-anime='right'] {
     transform: translate3d(0, -50px, 0);
   }
-  [data-anime].animate{
+  [data-anime].animate {
     opacity: 1;
-    transform: translate3d(0px,0px,0px);
+    transform: translate3d(0px, 0px, 0px);
   }
   .header-jq {
     padding: 0;
@@ -700,7 +716,7 @@ footer .logo img {
 
   #hamburguer::after,
   #hamburguer::before {
-    content: "";
+    content: '';
     margin-top: 5px;
     display: block;
     width: 20px;
@@ -742,7 +758,7 @@ footer .logo img {
   }
 
   .box-infos-right strong::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100px;
     height: 3px;
@@ -753,7 +769,7 @@ footer .logo img {
   }
 
   .box-infos-left strong::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100px;
     height: 3px;
