@@ -804,4 +804,8 @@ footer .logo img {
     margin: 40px 0;
     font-size: 1.5rem;
   }
+  .box-bg-home-new{
+    background: url(/imagens/banner-home/banner-1.jpg) #393538 79% 16% no-repeat;
+    height: 62vh;
+  }
 }
