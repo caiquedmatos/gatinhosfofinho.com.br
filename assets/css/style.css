@@ -160,7 +160,7 @@ header .logo img {
 }
 
 .box-bg-home-new{
-  background: url(/imagens/banner-home/banner-1.jpg) top no-repeat;
+  background: url(/imagens/banner-home/banner-1.jpg) #393538 top no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
